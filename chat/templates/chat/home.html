@@ -43,7 +43,7 @@
 							<div class="collapse" id="comments{{ post.id }}">
 								<div class="mt-2 card card-body">
 									{% for comment in post.comments.all %}
-										<code class="blockquote text-center border-bottom" style="font-size: 0.8rem">
+										<code class="blockquote text-center border-bottom">
 											{{ comment.text }}
 
 											<footer class="blockquote-footer">
@@ -87,4 +87,6 @@
 			{% include 'accounts/profile.html' %}
 		</div>
 	</div>
+{% endblock %}
+{% block js %}
 {% endblock %}
